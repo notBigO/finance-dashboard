@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+  background: #f8faff;
+}
+
+.sidebar {
+  width: 270px;
+  height: 100vh;
+  background: #f8faff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #546bc7;
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 36px;
+}
+
+.menu-item {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.menu-heading {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  border-radius: 8px;
+  transition: all 0.3s;
+  color: #7c8297;
+}
+
+/* .menu-heading:hover {
+  background: #f5f6fa;
+  color: #2d3436;
+}
+
+.menu-heading.active {
+  background: #f5f6fa;
+  color: #2d3436;
+} */
+
+.icon {
+  font-size: 25px;
+  margin-right: 23px;
+}
+
+.arrow {
+  margin-left: auto;
+  transition: transform 0.3s;
+  font-size: 25px;
+  rotate: 90deg;
+}
+
+.submenu {
+  display: block;
+  margin-left: 28px;
+  padding: 6px 0;
+}
+/* 
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.menu-item:hover .arrow {
+  transform: rotate(0deg);
+} */
+
+.submenu-item {
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: #7c8297;
+  transition: all 0.3s;
+}
+
+.submenu-item:hover {
+  background: #f5f6fa;
+  color: #2d3436;
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.search-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 18px 40px;
+  width: 30rem;
+  background-color: #f9fbfe;
+  border-radius: 60px;
+}
+
+.search-icon {
+  color: #818e95;
+}
+
+.search-container input {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  flex: 1;
+  color: #818e95;
+  padding: 10px 0px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: #818e95;
+}
+
+.notifications-icon {
+  font-size: 30px;
+}
+
+.message-icon {
+  font-size: 30px;
+}
+
+.user-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+
+.stats-container {
+  background: #fff;
+  height: 100%;
+  margin: 20px;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2);
+  gap: 16px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  width: full;
+  padding: 40px;
+  color: #fff;
+  font-weight: 600;
+  gap: 20px;
+  border-radius: 8px;
+}
+
+.card-heading {
+  font-size: large;
+}
+
+.card-value {
+  font-size: 35px;
+  font-weight: 900;
+}
+
+.income {
+  background-color: #3a77ef;
+}
+
+.expenses {
+  background-color: #63c7ff;
+}
+
+.onhand {
+  background-color: #a76dd4;
+}
+
+.profit {
+  background-color: #6cd5b1;
+}
+
+.graph-container {
+  margin-top: 20px;
+}
+
+.graph-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.graph {
+  background-color: #f8faff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.graph-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.graph-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.graph-heading {
+  font-weight: 600;
+}
+
+.graph-value {
+  color: #818e95;
+}
+
+button {
+  padding: 10px 40px;
+  cursor: pointer;
+  border: 1px solid #b4bcc0;
+  border-radius: 2px;
+  background: transparent;
+}
+
+.bar {
+  width: 100%;
+  background: #f8faff;
+}
+
+.pie-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.pie {
+  background-color: #f8faff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.pie-heading {
+  font-weight: 600;
+}
+
+.pie-data {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pie-img {
+  width: 100%;
+  height: 70%;
+}
+
+.pdata {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.pdata-heading {
+  font-weight: 600;
+}
+
+.pdata-value {
+  color: #818e95;
+}
+
+hr {
+  margin-top: 30px;
+}
+
+.report {
+  text-align: center;
+  margin-top: 20px;
+}

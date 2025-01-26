@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Finance</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="title">Finance</div>
+            <div class="menu-item">
+                <div class="menu-heading active">
+                    <span class="material-icons icon">dashboard</span>
+                    <span class="dashboard-title">Dashboard</span>
+                    <span class="material-icons arrow">chevron_right</span>
+                </div>
+                <div class="submenu">
+                    <div class="submenu-item">Classic</div>
+                    <div class="submenu-item">Minimal</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-heading">
+                    <span class="material-icons icon">apps</span>
+                    Applications
+                    <span class="material-icons arrow">chevron_right</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-heading">
+                    <span class="material-icons icon">widgets</span>
+                    UI Component
+                    <span class="material-icons arrow">chevron_right</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-heading">
+                    <span class="material-icons icon">dashboard_customize</span>
+                    Widgets
+                    <span class="material-icons arrow">chevron_right</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-heading">
+                    <span class="material-icons icon">description</span>
+                    Forms
+                    <span class="material-icons arrow">chevron_right</span>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <div class="menu-heading">
+                    <span class="material-icons icon">bar_chart</span>
+                    Charts
+                    <span class="material-icons arrow">chevron_right</span>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="navbar">
+                <div class="search-container">
+                    <span class="material-icons search-icon">search</span>
+                    <input type="text" placeholder="Search here..." />
+                </div>
+                <div class="user-info">
+                    <span class="material-icons notifications-icon">notifications</span>
+                    <span class="material-icons message-icon">message</span>
+                    <img src="avatar.jpg" alt="User Avatar" class="user-avatar" />
+                </div>
+            </div>
+            <div class="stats-container">
+                <div class="cards-container">
+                    <div class="card income">
+                        <span class="card-heading">Total Income</span>
+                        <span class="card-value">$579,000</span>
+                        <span class="card-percentage">Saved 25%</span>
+                    </div>
+                    <div class="card expenses">
+                        <span class="card-heading">Total Expenses</span>
+                        <span class="card-value">$79,000</span>
+                        <span class="card-percentage">Saved 25%</span>
+                    </div>
+                    <div class="card onhand">
+                        <span class="card-heading">Cash on Hand</span>
+                        <span class="card-value">$92,000</span>
+                        <span class="card-percentage">Saved 25%</span>
+                    </div>
+                    <div class="card profit">
+                        <span class="card-heading">Net Profit Margin</span>
+                        <span class="card-value">$179,000</span>
+                        <span class="card-percentage">Saved 65%</span>
+                    </div>
+                </div>
+
+                <div class="graph-container">
+                    <div class="graph">
+                        <div class="graph-header">
+                            <div class="graph-meta">
+                                <span class="graph-heading">AP and AR Balance</span>
+                                <span class="graph-value">Avg $5,309</span>
+                            </div>
+
+                            <div class="graph-btn">
+                                <button class="">Monthly</button>
+                                <button class="">Last Year</button>
+                            </div>
+
+                        </div>
+                        <img src="bar.webp" alt="Bar" class="bar">
+                    </div>
+
+                    <div class="pie-container">
+                        <div class="pie">
+                            <div class="pie-header">
+                                <div class="pie-meta">
+                                    <span class="pie-heading">% of Income Budget</span>
+                                </div>
+
+
+                            </div>
+                            <img src="pie.svg" alt="Pie" class="pie-img">
+
+                            <div class="pie-data">
+                                <div class="pdata">
+                                    <span class="pdata-heading">Blance</span>
+                                    <span class="pdata-value">$18,309</span>
+                                </div>
+                                <div class="pdata">
+                                    <span class="pdata-heading">Blance</span>
+                                    <span class="pdata-value">$18,309</span>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <span class="report">View full report</span>
+                        </div>
+                        <div class="pie">
+                            <div class="pie-header">
+                                <div class="pie-meta">
+                                    <span class="pie-heading">% of Expenses Budget</span>
+                                </div>
+
+
+                            </div>
+                            <img src="pie.svg" alt="Pie" class="pie-img">
+
+                            <div class="pie-data">
+                                <div class="pdata">
+                                    <span class="pdata-heading">Blance</span>
+                                    <span class="pdata-value">$18,309</span>
+                                </div>
+                                <div class="pdata">
+                                    <span class="pdata-heading">Blance</span>
+                                    <span class="pdata-value">$18,309</span>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <span class="report">View full report</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
